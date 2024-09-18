@@ -1,0 +1,26 @@
+{
+  "name": "vendure-stackblitz-starter",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "ts-node ./src/index.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@vendure/create": "^2.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.13"
+  },
+  "dependencies": {
+    "@vendure/admin-ui-plugin": "^2.2.5",
+    "@vendure/asset-server-plugin": "^2.2.5",
+    "@vendure/core": "^2.2.5",
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^9.6.0",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0",
+    "sql.js": "^1.10.3"
+  }
+}
