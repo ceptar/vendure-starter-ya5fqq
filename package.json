@@ -4,7 +4,10 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "ts-node ./src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "start:server": "node ./dist/index.js -H 0.0.0.0",
+    "start:worker": "node ./dist/index-worker.js -H 0.0.0.0",
+    "start": "concurrently yarn:start:*"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
@@ -19,6 +22,7 @@
     "@vendure/core": "^2.2.5",
     "bcryptjs": "^2.4.3",
     "better-sqlite3": "^9.6.0",
+    "concurrently": "^8.2.2",
     "dotenv": "^16.4.5",
     "fs-extra": "^11.2.0",
     "pg": "^8.11.5",
