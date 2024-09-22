@@ -35,8 +35,8 @@ export const config: VendureConfig = {
     type: 'postgres',
     synchronize: true, // turn this off for production
     logging: false,
-    database: 'vendurezwei',
-    host: 'localhost',
+    database: 'vendurefuenf',
+    host: '172.17.0.1',
     port: 5432,
     username: 'postgres',
     password: 'aergsgd5sgdr',
